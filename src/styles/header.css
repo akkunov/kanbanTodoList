@@ -1,0 +1,14 @@
+
+.header{
+    display:flex;
+    justify-content: start;
+}
+.title{
+    cursor: pointer;
+    font-size: 2.5rem;
+    border: none;
+    max-width:30rem;
+    text-wrap: none;
+    white-space: nowrap;
+    overflow: clip;
+}

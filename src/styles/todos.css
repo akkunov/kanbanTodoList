@@ -1,0 +1,125 @@
+.todos--container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    row-gap: 1.5rem;
+    background-color: var(--base-color);
+}
+.todo--block{
+    border: 1px solid #e4e4e4;
+    border-radius: var(--r-s);
+    width: 34rem;
+    background-color: var(--accent-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 1rem;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.todo__list{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 1rem;
+}
+.todo__title{
+    font-weight: 700;
+    font-size: 1.4rem;
+    text-align: center;
+    color: var(--base-color);
+    background-color: #8282ff;
+    height: 3.5rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.todo__item{
+    height: 15rem;
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    box-shadow: var(--shadow);
+    box-sizing: border-box;
+    transition: background-color 200ms ease-in;
+    background-color: #FFFFFF;
+    padding-inline: 1rem;
+}
+.todo--item__actions{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}
+.todo__item:active,
+.todo__item--title:active{
+    background-color: #e4e4e4;
+}
+.todo__item--title:hover{
+    background-color: #d3d1d1;
+}
+.todo__item--title:focus{
+    border: 2px solid rgba(130, 130, 255, 0.76);
+}
+.button{
+    border: none;
+    border-radius: var(--r-s);
+    width: 95%;
+    height: 5rem;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:center;
+    box-sizing: border-box;
+    padding: 1rem;
+    box-shadow: var(--shadow);
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    transition: background-color 100ms ease-in, border 220ms ease-in-out, box-shadow 200ms ease;
+    background-color: #ffffff;
+    cursor: cell;
+}
+.delete__todo{
+    background-color: transparent;
+    height: 3rem;
+    width: 3rem;
+    border: none;
+}
+
+.button:active{
+    background-color: #eae9e9;
+    box-shadow: none;
+}
+.button:hover {
+    background-color: #dedede;
+}
+
+.todo__item--title{
+    box-sizing: border-box;
+    display: inline-flex;
+    width: 80%;
+    height: 4rem;
+    font-size: 1.4rem;
+    align-items: center;
+    padding: 1rem;
+    overflow: hidden;
+}
+.todo__item--input {
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+    width: 80%;
+    height: 4rem;
+    border-radius: var(--r-s);
+    background-color: #FFFFFF;
+    border: none;
+    padding: 1rem;
+    font-size: 1.4rem;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+
