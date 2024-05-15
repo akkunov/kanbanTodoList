@@ -153,7 +153,7 @@ function createTodoElement({title, id, checked}) {
 
 // функция которая добавляет новый элемент в todoTitle
 function newTodoBlock (){
-    alert('мобильный! ')
+    alert('мобильный!')
     const newTodo = {
         id: Date.now().toString(),
         name: 'Untitled',

@@ -145,3 +145,9 @@
 }
 
 
+
+@media (hover: none) {
+    .button:active{
+        background-color: #dedede;
+    } 
+}
