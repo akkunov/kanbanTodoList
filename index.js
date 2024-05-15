@@ -215,7 +215,7 @@ function renderBlocks() {
     useLocalstorage.setData('todos', todoTitle)
 }
 
-renderBlocks();
+
 
 // эта функиця уже рендерит todolist внутри todoBlock так как здесь map мне пришлось
 // испольвать join потомучто он возвращает новый массив значений
@@ -223,10 +223,15 @@ function renderTodos(items) {
     return items.map(todo => createTodoElement(todo)).join('')
 
 }
+document.addEventListener('DOMContentLoaded', () => {
+    renderBlocks();
+    // это слушатель который создает новый todoList и это единсвенное статичная
+    // кнопка котрая с самого начала есть в DOM
 
-// это слушатель который создает новый todoList и это единсвенное статичная
-// кнопка котрая с самого начала есть в DOM
-newBlockBtn.addEventListener('click', newTodoBlock)
+    newBlockBtn.addEventListener('click', newTodoBlock);
+})
+
+
 
 
 
